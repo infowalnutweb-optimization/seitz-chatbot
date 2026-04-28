@@ -659,9 +659,9 @@
   // ═══════════════════════════════════════════════════════════
   var ICONS = {
     messageCircle: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>',
-    x: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>',
-    send: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>',
-    calendar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>',
+    x: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6l-12 12M6 6l12 12"/></svg>',
+    send: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M11 13h7"/></svg>',
+    calendar: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 4h18v18H3Z"/><path d="M3 10h18"/></svg>',
     chevronRight: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>',
   };
 
@@ -735,7 +735,7 @@
       '<div class="seitz-messages"></div>' +
       '<div class="seitz-input-area"></div>' +
       '<div class="seitz-hp" aria-hidden="true"><label>Leave empty</label><input type="text" name="website_url" autocomplete="off" tabindex="-1" /></div>' +
-      '<div class="seitz-footer"><span>The Seitz Foundation \u00b7 Oahu, Hawaii</span></div>' +
+      '<div class="seitz-footer"><span>The Seitz Foundation · Oahu, Hawaii</span></div>' +
     '</div>';
   };
 
@@ -1102,7 +1102,7 @@
     return str.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/'/g, "&#39;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   };
 
-  // ═══════════════════════════════════════════════════════════
+  // ════════════════════════════════════════════��══════════════
   // INITIALIZE
   // ═══════════════════════════════════════════════════════════
   if (document.readyState === "loading") {
